@@ -796,3 +796,29 @@ ii)     Creating object on class definition.
 iii)    Establising communication among object.
 
 A message for an object is request of execution of a procedure which will invoke a function in the preceiding object that generate a desired result. It involves the name of the object, name of function and the info to be sent. 
+
+Error and exception handling - The program when behaves abnormaly or unexpectedly this event is turned as an error. The common types of error are 
+i)      Syntax Error - They occur when the programmer violates the rule of any programming languange.
+ii)     Logical error - Due to poor understanding of a problem and its solution. It specifies all types of errors in which the program executes but gives incorrect results. It may occur due to wrong algorithm or logic. The logical error sometimes leaves to a runtime error which causes the program to terminate abruptly. These types of runtime errors are known as exceptional. 
+
+The Exceptions are categorised as 
+i)      Synchronous like /0, arrays index of bond, etc. after can be controlled by the program.
+ii)     Asynchronous like an interuption from the keyboard or hardware malfunction or disk failure are caused by events that are beyound the control of the program.
+
+An "execption" is an event which occurs during excecusion of the program and disrupt the normal flow of the program instruction. When a program encounters a situation it cannot with it raaises an exception. Hence, exception is a python object which represents an error. When a program raises an "exception" it must handle the exception or the program will be immediately terminated. The exception in a program is handled usin "try block and except block". A critical operation which can raise exception is placed inside the try block and the code that handle exception is written in except block. 
+
+The syntax for try and except block is - 
+try:
+        statements
+except ExceptionName:
+        statements
+
+        Exception raised     ➡️     If NO     ➡️     Program excecutes normally
+                ⬇
+        If YES  ⬇
+                ⬇
+        Handler found?     ➡️     If NO     ➡️     The prgram is terminated and an error message is displayed
+                ⬇
+        IF YES  ⬇
+                ⬇
+        Program control is trasferred to handler
