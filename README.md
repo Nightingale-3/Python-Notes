@@ -871,4 +871,28 @@ except ExceptionName:
                 ⬇
         Program control is trasferred to handler
 
- 
+Multiple Accept block - Python allows multiple Accept blocks for a single try block, a try block can be asscoiated with more than one except block for multiple exception however only one exception will be executed. Exception handler will only handle exception with occurs with correspondence try block
+
+try:
+        operation are done in this block.
+        ---------------------------------------------------
+except Exception1:
+        If there is Exception1, then execute this block.
+except Exception2:
+        If there is Exception2, then execute this block.
+        ---------------------------------------------------
+
+Except block with Exception - Except block can be specified without mentioning an exception such type of excpet block if present should be the last one which would act as a wild card. Sometimes it is difficult to anticipate all types of exception in a large software. Therefore programmer may not be able to write difeerent handler(except block) for every individual type of exception. In such a situation it would be better to write a handler that would catch all types of exception. 
+
+Raising Exception - An exception can be raised delibaretly using the keywoard raise. 
+General syntax for raise in 
+
+raise[Exception[],args[],traceback[]]
+
+Exception - It is the name of exception to be raised for ex - TypeError.
+
+Args - Optional and specifies the value for the exception arguments If args is not specified then exception args is none.
+
+Traceback - It is also optional and if present and traceback for objective used for the exception.
+
+Instantiating Exception - Python allows programmer to instantiate an exception first for raising it and at any attribute to it as desire. These attribute can be used for additional information about the errors.
