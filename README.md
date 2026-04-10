@@ -781,12 +781,14 @@ ii)     Function overloading - Single function name can be used to handle differ
                                                                                 Shape 
                                                                                --------
                                                                                 Draw()
-                                                                                
+                                                                                  ⬇
                                                                                   ↓
-
+                                                                                  ⬇
+                                      -----------------                     --------------                    --------------------
                                         Circle object                         Box object                        Triangle object
                                       -----------------                     --------------                    --------------------
                                          Draw(Circle)                          Draw(box)                         Draw(Triangle)
+                                      -----------------                     --------------                    --------------------
 
 Dynamic binding - Binding refers to linking of the procedure called to the code to be executed in respond to the call. It is also known as late binding means that code associated with the given procedure call is not known until the time of call at runtime. 
 
@@ -796,6 +798,51 @@ ii)     Creating object on class definition.
 iii)    Establising communication among object.
 
 A message for an object is request of execution of a procedure which will invoke a function in the preceiding object that generate a desired result. It involves the name of the object, name of function and the info to be sent. 
+
+Inheritance - It is the process by which new classes called derived classes are created from existing class called base class. The derived class has all the features of the base class and the programmer can choose to add new features specifically to the newly created derived classes. The idea of inheritance implements "is a relationship". For example - Mammal IS A animal, Dog IS A mammal. Hence, Dog IS A animal.
+
+Features or advantages of Inheritance - 
+i)      Reusability of code 
+ii)     Saves time and effort
+iii)    Fasteer Development, easier maintanance and easy to extent
+
+Capable of expressing the en and its transitivive nature which ensures closesness with real world problems - 
+
+Access control and Inheritance - A dereived class can access all the protected and public members of its base class. It cannot access the private member of the base class.
+
+        Public 
+        ------------                    ➡️➡️ can be inherited by the class class
+        Protected 
+        ------------
+        Private                         ➡️➡️ cannot be inherited by the child class
+
+        Members of the base class     ➡️➡️     Private                          Protected                                             Public
+        \\\\\\\\\\\\\\\\\\\\\\\\\          
+        Inheritance type
+
+                ⬇️
+                ⬇️
+        
+        Private                               Not Inherited         Becomes private to child class                      Becomes private to child class
+
+        Protected                             Not Inherited         Becomes protected members of child class            Becomes protected members of child class
+
+        Public                                Not Inherited         Becomes protected members of child class            Becomes public members of child class
+
+Types of Inheritance - 
+
+        A                                                       A                 B                                                             A               C)Hierarchical
+       ⬇️       a) Single Inheritance                          ⬇️               ⬇️           b)Multiple Inheritance                           ⬇️                   Inheritance
+        B                                                       ➡️➡️➡️ ⬇️ ⬅️⬅️⬅️                                                ⬇️⬅️⬅️⬅️⬅⬇️➡️➡️➡️➡️⬇️        
+                                                                        ⬇️                                                         ⬇️         ⬇️          ⬇️
+                                                                         C                                                          B           C           D
+
+        A                                                               A
+       ⬇️                                                       ⬅️⬅️⬅️
+        B       d) Multilevel Inheritance                       B               C              e) Hybrid Inheritence
+       ⬇️                                                              ⬇️
+        C                                                               D
+
 
 Error and exception handling - The program when behaves abnormaly or unexpectedly this event is turned as an error. The common types of error are 
 i)      Syntax Error - They occur when the programmer violates the rule of any programming languange.
