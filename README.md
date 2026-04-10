@@ -804,7 +804,8 @@ Inheritance - It is the process by which new classes called derived classes are 
 Features or advantages of Inheritance - 
 i)      Reusability of code 
 ii)     Saves time and effort
-iii)    Fasteer Development, easier maintanance and easy to extent
+iii)    Faster Development, easier maintanance and easy to extent and maintain
+iv)     Capable of expressing the inheritance relationship and its transitive nature which ensures loseness with real world problems.
 
 Capable of expressing the en and its transitivive nature which ensures closesness with real world problems - 
 
@@ -869,3 +870,5 @@ except ExceptionName:
         IF YES  ⬇
                 ⬇
         Program control is trasferred to handler
+
+ 
