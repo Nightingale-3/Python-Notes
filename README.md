@@ -862,6 +862,10 @@ Multi-Level Inheritance - Syntax
         class Derived2(Derived1)
                 Pass
 
+Multi-path Inheritance - 
+
+Polymorphism and Method Overriding - Poly. enables the prograammer to assign different meanings or usage to a variable, function or an object in different context. It is related to methods, it is also applied to function or methods depending on the given parameters, particular form of function that can be selected for excecution. In python, Method Overriding is one of the way to implement poly. 
+
 
 
 Error and exception handling - The program when behaves abnormaly or unexpectedly this event is turned as an error. The common types of error are 
