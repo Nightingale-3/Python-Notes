@@ -839,10 +839,29 @@ Types of Inheritance -
                                                                          C                                                          B           C           D
 
         A                                                               A
-       ⬇️                                                       ⬅️⬅️⬅️
+       ⬇️                                                      ⬅️⬅️⬅️  ➡️➡️➡️
         B       d) Multilevel Inheritance                       B               C              e) Hybrid Inheritence
-       ⬇️                                                              ⬇️
+       ⬇️                                                      ➡️➡️➡️⬇️⬅️⬅️⬅️
         C                                                               D
+
+Multiple Inheritance - Syntax
+
+        class Base1:
+                statement block
+        class Base2:
+                statement block
+        class Derived (Base1, Base2):
+                statement block
+
+Multi-Level Inheritance - Syntax
+
+        class Base:
+                pass
+        class Derived1(Base)
+                pass
+        class Derived2(Derived1)
+                Pass
+
 
 
 Error and exception handling - The program when behaves abnormaly or unexpectedly this event is turned as an error. The common types of error are 
@@ -896,3 +915,4 @@ Args - Optional and specifies the value for the exception arguments If args is n
 Traceback - It is also optional and if present and traceback for objective used for the exception.
 
 Instantiating Exception - Python allows programmer to instantiate an exception first for raising it and at any attribute to it as desire. These attribute can be used for additional information about the errors.
+
