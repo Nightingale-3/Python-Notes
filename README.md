@@ -910,7 +910,7 @@ Except block with Exception - Except block can be specified without mentioning a
 Raising Exception - An exception can be raised delibaretly using the keywoard raise. 
 General syntax for raise in 
 
-raise[Exception[],args[],traceback[]]
+raise[Exception[], args[], traceback[]]
 
 Exception - It is the name of exception to be raised for ex - TypeError.
 
@@ -918,5 +918,44 @@ Args - Optional and specifies the value for the exception arguments If args is n
 
 Traceback - It is also optional and if present and traceback for objective used for the exception.
 
-Instantiating Exception - Python allows programmer to instantiate an exception first for raising it and at any attribute to it as desire. These attribute can be used for additional information about the errors.
+Instantiating Exception - Python allows programmer to instantiate an exception first before raising it and at any attribute to it as desire. These attribute can be used for additional information about the errors. To instantiate the exception an accept block will specify a variable after the exception name., the variable then becomes an exception instance with the argumnets showed in instance.args. The exception instance also has the string method (__str__()method) define so that the argument can be printed directly without using instance.args.
 
+Handling exception in Invoked function - 
+
+Syntax:
+        function_name(arg list):
+        ---------
+        ---------
+        try:
+                ------------
+                function_name()
+                ------------
+        except  ExcecptionName:
+                ------------
+                Code to handle exception
+                ------------
+
+        Throw point 
+        Invoke a function that generate an exception
+                        ⬇
+                        ⬇
+                        ⬇
+        Try block
+                        ⬇
+                        ⬇
+                        ⬇
+        Except block
+
+
+The finally block - The try block has another optional block call finally which is use to define clean up action which must be executed under all circumstances. The finally block is always executed before leaving the try block. This means that the statement written in finally block are executed irrespective of whether an exception has occured or not. 
+
+Syntax:
+        try:
+                Write your operations here
+                ----------
+                Due to exception, operations written here will be skipped
+        finally:
+                This would be executed.
+                ----------
+
+Pre-Defined clean-up action - In python some object define standard clean-up action that are automatically performed when the object is no longer needed. The default clean-up is performed irrespective of whether the operation of using the object succeded or failed. For ex- Operation in file handling, the file is prefer to open "with" keywoard,` so that file is automatically closed when not in use. If the programmer forgets to close the file or the code to close it is skipped because of an exception the file will still be closed.
