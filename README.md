@@ -868,6 +868,9 @@ Polymorphism and Method Overriding - Poly. enables the prograammer to assign dif
 
 
 
+#  Exception Handling
+
+
 Error and exception handling - The program when behaves abnormaly or unexpectedly this event is turned as an error. The common types of error are 
 i)      Syntax Error - They occur when the programmer violates the rule of any programming languange.
 ii)     Logical error - Due to poor understanding of a problem and its solution. It specifies all types of errors in which the program executes but gives incorrect results. It may occur due to wrong algorithm or logic. The logical error sometimes leaves to a runtime error which causes the program to terminate abruptly. These types of runtime errors are known as exceptional. 
@@ -959,3 +962,18 @@ Syntax:
                 ----------
 
 Pre-Defined clean-up action - In python some object define standard clean-up action that are automatically performed when the object is no longer needed. The default clean-up is performed irrespective of whether the operation of using the object succeded or failed. For ex- Operation in file handling, the file is prefer to open "with" keywoard,` so that file is automatically closed when not in use. If the programmer forgets to close the file or the code to close it is skipped because of an exception the file will still be closed.
+
+Assertion in Python - An assertion is a basic check that can be turned on or off when the program is being tested. Using the assert statement an expression is tested and if the result of the expression is false then an exception is raised. Assert statement is intended for debugging statements. It can be seen as abbreviated notion for conditional raised statemnt. In python assertion is implemented using assert statement. It is usually placed at the start of the function to check for valid input and after the function is called it checks for a valid output. When python encounters assert statement exception associated with it is calculated and if the expression is false "assertion error is rasied". 
+
+Syntax -
+assert expression[args]
+
+Assertion error exception can be caught and handled like any other exception using try-except block. 
+
+# NumPy
+
+It is an open-source numerical library used for working with mathematical function with multi-dimensional array and matrix data structure. It is commanly used in working with 
+Numpy stands for numerical python.
+
+Uses of NumPy:-
+        NumPy array uses less memory than normal python list. A normal python list is book of pointers to seperate python object. A NumPy array is designed to be an array of uniform values without using extra memory space for type pointers. This makes it much more efficient and actual use a lot less memory than the normal python list. NumPy can also read read information faster than python array and has lots of convinient broadcasting operation that can be performed across array dimensions.
