@@ -1,0 +1,7 @@
+seconds = 3665
+
+hours = seconds // 3600
+minutes = (seconds % 3600) // 60
+sec = seconds % 60
+
+print(hours, minutes, sec)
