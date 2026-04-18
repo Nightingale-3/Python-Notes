@@ -1,0 +1,6 @@
+v = lambda r, h: (1/3) * 3.14 * r * r * h
+
+r = float(input("Enter radius: "))
+h = float(input("Enter height: "))
+
+print("Volume:", v(r, h))
