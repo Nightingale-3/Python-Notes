@@ -1,18 +1,16 @@
-name = input("Enter Name: ")
-roll = input("Enter Roll Number: ")
-sapid = input("Enter SAP ID: ")
-course = input("Enter Course: ")
-sem = input("Enter Semester: ")
+name = ("Name: Rohit Sharma ")
+roll = ("Roll Number: R17234512")
+sapid = ("SAP ID: 50005673")
+course = ("Course: B.Tech. CSE AI&ML")
+sem = ("Semester: 1")
 
-print("\nEnter marks of 5 subjects:")
+s1 = ("PDS = ", 70)
+s2 = ("Python = ", 80)
+s3 = ("Chemistry = ", 90)
+s4 = ("English = ", 60)
+s5 = ("Physics = ", 50)
 
-s1 = int(input("PDS: "))
-s2 = int(input("Python: "))
-s3 = int(input("Chemistry: "))
-s4 = int(input("English: "))
-s5 = int(input("Physics: "))
-
-total = s1 + s2 + s3 + s4 + s5
+total = s1[1] + s2[1] + s3[1] + s4[1] + s5[1]
 percentage = total / 5
 cgpa = percentage / 10
 
